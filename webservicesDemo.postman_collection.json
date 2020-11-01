@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "1c062123-f393-4789-8ae9-4d1ba46335fb",
+		"name": "macprojects",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "update employee details",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"First Name\": \"Srikar\",\n        \"Last Name\": \"Vangala\",\n        \"Gender\": \"M\",\n        \"E Mail\": \"srikar.vangala@gmail.com\",\n        \"Date of Birth\": \"11/20/2020\",\n        \"Age in Yrs.\": 30,\n        \"Date of Joining\": \"11/04/2014\",\n        \"Salary\": 168251,\n        \"City\": \"Auckland\",\n        \"hello\":\"test\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8001//webServiceDemo/Employees/677509",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"",
+						"webServiceDemo",
+						"Employees",
+						"677509"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkAlive",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8001//webServiceDemo/checkAlive",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"",
+						"webServiceDemo",
+						"checkAlive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Employees Data with limit",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8001/webServiceDemo/employees?limit=2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"webServiceDemo",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete employee by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8001/webServiceDemo/employees?ID=408351",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"webServiceDemo",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "ID",
+							"value": "408351"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refreshData",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8001/webServiceDemo/refreshData",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"webServiceDemo",
+						"refreshData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Employee Details by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8001/webServiceDemo/getEmpByID?ID=231469",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8001",
+					"path": [
+						"webServiceDemo",
+						"getEmpByID"
+					],
+					"query": [
+						{
+							"key": "ID",
+							"value": "231469"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
